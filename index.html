@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b1645a3264.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Кодова майстерня</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <img src="images/main.jpg" alt="main" class="main-bg" />
+      <div class="main">
+        <div class="navbar" id="navbar">
+          <ul class="menu">
+            <li>Про нас</li>
+            <li>Контакти</li>
+            <li>Курси</li>
+          </ul>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+          </a>
+        </div>
+        <div class="title">
+          <img class="logo" src="images/logo.png" alt="logo" />
+          <h1>Кодова майстерня: Онлайн-курси з програмування</h1>
+        </div>
+        <div class="bottom-text">
+          Від початківця до експерта: Розблокуй свій потенціал з нами!
+        </div>
+      </div>
+    </div>
+    <div class="about-us">
+      <h2>Про нас</h2>
+      <p>
+        Курси «Кодова майстерня» - це інтенсивний навчальний досвід, який
+        допомагає учням створити основи для розуміння програмування та розвивати
+        свої навички в цій сфері. Наші курси призначені для всіх, від новачків
+        до досвідчених програмістів, які хочуть розширити свої знання та
+        навички. Наші інструктори - професіонали в своїй галузі з багаторічним
+        досвідом у програмуванні та викладанні. Вони знають, як надихнути та
+        мотивувати учнів до досягнення максимальних результатів.
+      </p>
+      <img src="images/about-us.webp" alt="about-us" />
+    </div>
+    <div class="bg-video">
+      <video src="videos/top5.mp4" loop autoplay muted></video>
+    </div>
+    <div class="contacts">
+      <h2>Контакти</h2>
+      <div class="contact-group">
+        <div class="contact-container">
+          <img src="images/phone-icon.png" alt="phone-icon" />
+          <p>+380500000000</p>
+        </div>
+        <div class="contact-container">
+          <img src="images/mail-icon.png" alt="mail-icon" />
+          <p>Svitlana.Bobosh.PTs.2021@lpnu.ua</p>
+        </div>
+        <div class="contact-container">
+          <img src="images/geo-icon.png" alt="geo-icon" />
+          <p>м. Київ, вул. Проста, 6</p>
+        </div>
+      </div>
+      <div class="social-group">
+        <div class="social-text"><p>Шукайте нас у соц. мережах</p></div>
+        <div class="social-link">
+          <img src="images/facebook-icon.png" alt="facebook-icon" />
+        </div>
+        <div class="social-link">
+          <img src="images/inst-icon.png" alt="inst-icon" />
+        </div>
+        <div class="social-link">
+          <img src="images/tg-icon.png" alt="tg-icon" />
+        </div>
+      </div>
+    </div>
+    <div class="courses-wrapper">
+      <img class="courses-bg" src="images/courses.jpg" alt="courses" />
+      <div class="courses">
+        <h2>Курси</h2>
+        <div class="courses-block">
+          <div class="course-block">
+            <div class="course-heading">
+              <img src="images/java.png" alt="java" />
+              <h3>Java</h3>
+            </div>
+            <div class="course-content">
+              <p>Ви навчитеся:</p>
+              <ul>
+                <li>ООП</li>
+                <li>Патерни дизайну</li>
+                <li>Писати якісний код</li>
+              </ul>
+            </div>
+            <div class="signup">
+              <button class="signup-btn">Приєднатися зараз</button>
+            </div>
+          </div>
+          <div class="course-block">
+            <div class="course-heading">
+              <img src="images/cpp.png" alt="cpp" />
+              <h3>C++</h3>
+            </div>
+            <div class="course-content">
+              <p>Ви навчитеся:</p>
+              <ul>
+                <li>ООП</li>
+                <li>Патерни дизайну</li>
+                <li>Писати якісний код</li>
+              </ul>
+            </div>
+            <div class="signup">
+              <button class="signup-btn">Приєднатися зараз</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <label for="message">Коментар</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById('navbar');
+        if (x.className === 'navbar') {
+          x.className += ' responsive';
+        } else {
+          x.className = 'navbar';
+        }
+      }
+    </script>
+  </body>
+</html>
